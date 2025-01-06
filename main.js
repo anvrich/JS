@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function showTaskDetails(taskText, deadline, time, comment) {
         detailView.innerHTML = "";
 
-        const taskTitle = document.createElement("h2");
+        const taskTitle = document.createElement("h3");
         taskTitle.textContent = taskText;
 
         const deadlineDisplay = document.createElement("p");
