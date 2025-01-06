@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const li = document.createElement("li");
         li.classList.add("task-item");
 
+
+        const taskContent = document.createElement("div");
+        taskContent.classList.add("task-content");
+
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
 
@@ -36,7 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
             todoContainer.classList.add("expanded");
         });
 
-        li.append(checkbox, span, commentToggle);
+        taskContent.append(checkbox, span);
+        li.append(taskContent, commentToggle);
         ul.prepend(li);
 
         textInput.value = "";
