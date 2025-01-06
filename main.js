@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
         li.append(checkbox, span, commentToggle);
         ul.prepend(li);
 
-        // Очистка полей
         textInput.value = "";
         deadlineInput.value = "";
         timeInput.value = "";
