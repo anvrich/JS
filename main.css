@@ -13,7 +13,7 @@ body {
     display: flex;
     height: 85vh;
     width: 90%;
-    max-width: 1500px;
+    max-width: 1700px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     overflow: hidden;
@@ -180,7 +180,7 @@ h1::after {
 }
 
 .close-button:hover {
-    background: #c9302c;
+    background: #931e1b;
     transform: translateY(-3px);
     box-shadow: 0 6px 18px rgba(217, 83, 79, 0.3);
 }
@@ -265,3 +265,65 @@ h1::after {
     outline: none;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5);
 }
+
+
+
+
+
+
+
+
+/* Кнопка закрытия деталей */
+.delete-button {
+    margin-top: 30px;
+    padding: 14px 23px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+
+}
+
+.delete-button:hover {
+    margin-left: 30px;
+    background: #931e1b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(217, 83, 79, 0.3);
+}
+
+
+
+
+
+.empty-message {
+    display: none;
+    color: #d9534f;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px dashed #d9534f;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #fff3f3, #ffe6e6);
+    box-shadow: 0 4px 12px rgba(217, 83, 79, 0.2);
+    animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
